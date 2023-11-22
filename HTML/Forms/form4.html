@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Form</h1></legend>
+         <form action="">
+           <label for="FirstName">First Name</label>
+           <input type="text" name="FirstName" id="FirstName"><br><br>
+           <label for="LastName">Last Name</label>
+           <input type="text" name="LastName" id="LastName"><br><br>
+           <label for="Age">Age</label>
+           <input type="number" name="Age" id="Age"><br><br>
+           <label for="Male">Gender: </label>
+           <input type="radio" name="Gender" id="Male" value="Male">
+           <label for="Male">Male</label>
+           <input type="radio" name="Gender" id="Female" value="Female">
+           <label for="Female">Female</label>
+           <input type="radio" name="Gender" id="Others" value="Others">
+           <label for="Others">Others</label><br><br>
+           <label for="AadharCard">Aadhar Card No:</label>
+           <input type="text" name="AadharCardNo" id="AadharCard" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"><br><br>
+           <label for="PhoneNumber">Phone Number:</label>
+           <input type="text" name="PhoneNumber" id="PhoneNumber"><br><br>
+           <label for="PartOfIndia">Part Of India: </label>
+           <select name="PartOfIndia" id="PartOfIndia">
+            <option value="SouthIndia">South India</option>
+            <option value="NorthIndia">North India</option>
+            <option value="EastIndia">East India</option>
+            <option value="CentralIndia">Central India</option>
+           </select><br><br>
+           <label for="IdProof">Select the Id Proof to Attach: </label>
+           <input list="IdP" name="IdProof" id="IdProof">
+           <datalist id="IdP">
+            <option value="PanCard">
+            <option value="AadharCard">
+            <option value="TwoWheelerLicense">
+            <option value="SmartCard">
+           </datalist><br><br>
+           <input type="submit" value="Click to Submit!">
+        </form>
+    </fieldset>   
+</body>
+</html>

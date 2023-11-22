@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Enter Your Details Here</h1>
+    <form action="">
+        <label for="FirstName">FirstName : </label>
+        <input name="FirstName" id="FirstName" type="text" pattern="[A-Za-z]+" required><br><br>
+        <label for="LastName">LastName : </label><input name="LastName" id="LastName" type="text"><br><br>
+        <label for="Age">Age : </label><input name="Age" id="Age" type="number"><br><br>
+        <label for="DateOfBirth">DateOfBirth : </label><input name="DateOfBirth" id="DateOfBirth" type="date"><br><br>
+        <label for="EmailId">EmailId : </label><input name="EmailId" id="EmailId" type="email"><br><br>
+        <label for="Password">Password : </label><input name="Password" id="Password" type="password"><br><br>
+        
+        <h3>Enter your TShirt Size</h3>
+        <input name="TShirtSize" id="Small" type="radio" value="Small"><label for="Small">Small</label> &nbsp;
+        <input name="TShirtSize" id="Medium" type="radio" value="Medium"><label for="Medium">Medium</label> &nbsp;
+        <input name="TShirtSize" id="Large" type="radio" value="Large"><label for="Large">Large</label> &nbsp;
+        <input name="TShirtSize" id="X-large" type="radio" value="X-large"><label for="X-large">X-large</label> &nbsp;
+
+        <br><br>
+        <label for="TShirtcolor">Select the TShirt Color : </label><input id="TShirtcolor" type="color" name="TShirtcolor" value="TShirtcolor"><br><br>
+
+       <label for="PhotoInTShirt">Select the Photo to be printed in TShirt : </label>
+        <select name="PhotoInTShirt" id="PhotoInTShirt">
+            <option value="Virat">Virat Kohli</option>
+            <option value="Dhoni">M S Dhoni</option>
+            <option value="Kamal">Kamal Hassan</option>
+            <option value="Messi">Leo Messi</option>
+        </select>
+        <br><br>
+
+        <input type="reset"> &nbsp;
+        <input type="submit">
+
+    </form>
+</body>
+</html>
