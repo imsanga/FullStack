@@ -1,0 +1,20 @@
+body{background-color: black; color: red;}
+h1 {
+    color:chartreuse;
+    text-align: center;
+}
+table{width: 45%}
+table, td, th{
+    border: 5px solid whitesmoke;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: center;
+}
+tr.ind:hover {background-color: blue; color: white; }
+tr.aus:hover {background-color: yellow; color: black; }
+tr.pak:hover {background-color: green; color: black; }
+tr.rsa:hover {background-color: greenyellow; color: black; }
+tr.slk:hover {background-color: darkblue; color: white; }
