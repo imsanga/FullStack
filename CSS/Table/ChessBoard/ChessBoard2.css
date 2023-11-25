@@ -1,0 +1,36 @@
+/* *{
+    background-color: F0FFFF;
+}*/
+*{
+    background-color: grey;
+}
+body{
+    height: 750px;
+    width: 750px;
+    margin: 30px auto;
+}
+.row {
+    height: 93.75px;
+    width: 100%;
+    display: flex;  
+    flex-direction: row;
+    font-size: 75px;
+    text-align: center;  
+}
+.l_green:hover {
+    background-color: greenyellow;
+}
+.green:hover {
+    background-color: #baca44 ;
+
+}
+.l_green {
+    height: 93.75px;
+    width: 93.75px;
+    background-color: #eeeed2; 
+}
+.green {
+    height: 93.75px;
+    width: 93.75px;
+    background-color: #769656; 
+}
