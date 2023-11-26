@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.flexContainer {
+  border: 5px solid black;
+}
+
+.flex-item {
+  font-size: 18px;
+  padding: 16px;
+  text-align: center;
+}
+
+.box-1 {
+  background-color: #1abc9c;
+}
+.box-2 {
+  background-color: #3498db;
+}
+.box-3 {
+  background-color: #2ecc71;
+}
+.box-4 {
+  background-color: #9b59b6;
+}
+.box-5 {
+  background-color: #34495e;
+}
+.box-6 {
+  background-color: #2980b9;
+}
+.box-7 {
+  background-color: #e74c3c;
+}
+.box-8 {
+  background-color: #d35400;
+}
+.box-9 {
+  background-color: #2c3e50;
+}
+
+/**************/
+
+/* .flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+/* .flexContainer {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+} */
+
+/* .flexContainer {
+  display: flex;
+  height: 350px;
+  flex-flow: column wrap;
+} */
+
+/* JustifyContent-MainAxis
+.flexContainer {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.flexContainer {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+} */
+
+/* AlignItems-CrossAxis 
+.flexContainer {
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch;
+  align-items: baseline;
+}
+
+.flexContainer {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch;
+  align-items: baseline;
+} */
+
+/* .flexContainer {
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+} */
