@@ -1,0 +1,43 @@
+*{margin:0; padding:0; box-sizing:border-box}
+.oc {
+    background-color: black;
+    height:10000px;
+    width:1000px;
+    border: 10px solid red;
+    margin:auto;
+    
+}
+.ic {
+    background-color: whitesmoke;
+    height:1500px;
+    width:500px;
+    border: 10px solid red;
+    margin:100px auto;
+       
+}
+.box {
+    border: 5px solid blueviolet;
+    color:red;
+    background-color: aqua;
+}
+.relative {
+    position: relative;
+    left: 150px;
+    top: 150px;
+}
+.absolute{
+    position: absolute;
+    top: 10px;
+    left: 5px;    
+}
+.fixed {
+    position: fixed;
+    left: 50px;
+}
+.sticky {
+    position:sticky;
+    top:100px;
+}
+
+
+
