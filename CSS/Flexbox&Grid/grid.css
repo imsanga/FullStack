@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 5px solid black;
+  margin: 20px;
+}
+
+.grid-item {
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 16px;
+  text-align: center;
+}
+
+.box-1 {
+  background-color: #1abc9c;
+}
+.box-2 {
+  background-color: #3498db;
+}
+.box-3 {
+  background-color: #2ecc71;
+}
+.box-4 {
+  background-color: #9b59b6;
+}
+.box-5 {
+  background-color: #34495e;
+}
+.box-6 {
+  background-color: #2980b9;
+}
+.box-7 {
+  background-color: #e74c3c;
+}
+.box-8 {
+  background-color: #d35400;
+}
+.box-9 {
+  background-color: #2c3e50;
+}
+
+/**************/
+
+/* .container {
+  display: grid;
+  grid-template-columns: 100px 250px;
+  grid-template-columns: 150px 200px 350px;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+} */
+
+/* .container {
+  display: grid;
+  height: 800px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-template: repeat(3, 200px) / repeat(3, 1fr);
+} */
+
+/* .container {
+  display: grid;
+  grid-template: repeat(3, 200px) / repeat(3, 1fr);
+  justify-items: start;
+  justify-items: center;
+  justify-items: end;
+  justify-items: stretch; default
+  align-items: start;
+  align-items: center;
+  align-items: end;
+  align-items: stretch; default
+  place-items: end start;align + justify
+} */
+
+.container {
+  display: grid;
+  height: 800px;
+  grid-template: repeat(3, 200px) / repeat(3, 200px);
+  justify-content: center;
+  align-content: center;
+  place-content: center;
+  justify-content: space-around;
+  align-content: space-evenly;
+}
