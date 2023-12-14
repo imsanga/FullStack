@@ -8,6 +8,3 @@ console.log(myNumlist[2]);
 console.log(myNumlist[3]);
 console.log(myNumlist[4]);
 console.log(myNumlist[5]);
-
-
-
