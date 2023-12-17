@@ -14,5 +14,5 @@ class Vote {
 }
 
 const voter1 = new Vote(50);
-voter1.age = 15; //settingUp
-console.log(voter1.age); //DisplayingIt
+voter1.age = 15; //settingUp(property is assigned)
+console.log(voter1.age); //DisplayingIt(property is looked up)

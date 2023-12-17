@@ -1,4 +1,4 @@
-//Inheritance - the child class is inherited from the parent class
+//Inheritance - the child(derived) class is inherited from the parent(base) class
 class User {
   static noOfUsersVisited = 0;
   constructor(userName, ecommerceSite) {
