@@ -18,7 +18,7 @@ myServer9
     if (url === "/message" && method == "POST") {
       const receivedMessage = [];
       request.on("data", (chunk) => receivedMessage.push(chunk));
-      request.on("end", () => {
+      return request.on("end", () => {
         const storedMessage = Buffer.concat(receivedMessage).toString();
         const extractMessage = storedMessage.split("=");
         myFileSystem2.writeFileSync(
@@ -32,7 +32,7 @@ myServer9
           `<body><h1>U must achieve ${extractMessage[1]}!!!</h1></body>`
         );
         response.write("</html>");
-        response.end();
+        return response.end();
       });
     }
   })
