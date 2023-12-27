@@ -1,8 +1,8 @@
-// indexPage
+// indexPage - (indexy.js)
 const myExpress2 = require("express");
 const app5 = myExpress2();
 const bodyParser = require("body-parser");
-const adminRoutes = require("./addStoreProduct");
+const adminRoutes = require("./routes/addStoreProduct");
 
 app5.use(bodyParser.urlencoded({ extended: true }));
 app5.use(adminRoutes);
