@@ -8,6 +8,11 @@
   </head>
   <body>
     <main>
+      <% if (userDetails.valid) { %>
+      <p>Welcome, <%= userDetails.username %>!</p>
+      <% } else { %>
+      <p>Welcome, guest!</p>
+      <% } %>
       <form action="/storeProduct" method="POST">
         <input type="text" name="title" /> &nbsp;&nbsp;
         <input type="submit" value="AddProduct" />

@@ -1,3 +1,7 @@
+// template engine [It is used for performing dynamic HTML content on the server side]- It is a module that allows you to embed dynamic content within the HTML views of your application
+
+// EJS - Embedded JavaScript
+
 // indexPage - (indexy.js)
 const myExpress2 = require("express");
 const app5 = myExpress2();
