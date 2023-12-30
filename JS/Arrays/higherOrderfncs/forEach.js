@@ -1,5 +1,6 @@
 //foreach - takes each element from the array and calls the callbackfnc
 // (element, index, array)
+//note: forEach doesn't return anything
 
 //with arrow functions
 // Example_1
