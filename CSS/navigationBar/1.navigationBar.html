@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madras Monkeys</title>
+    <link rel="stylesheet" href="1.navigationBar.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Madras Monkeys</div>
+      <ul class="showMenu">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <div class="menu" onclick="hamburgerM()">
+        <div class="menuLine"></div>
+        <div class="menuLine"></div>
+        <div class="menuLine"></div>
+      </div>
+    </nav>
+    <main>
+      soluta incidunt rerum fugit minima, veritatis obcaecati libero. Suscipit
+      sunt facilis blanditiis aut tempore sint corrupti cumque consequuntur et
+      at obcaecati itaque, est dolorem, cupiditate dolorum eligendi nemo! Ab
+      quos voluptas aut ratione. Aspernatur perferendis voluptatem vero,
+      consequatur enim quo numquam ex animi dicta minus consequuntur rem, quasi
+      accusamus provident reiciendis, incidunt voluptates? Repudiandae, quaerat
+      saepe? Incidunt iste suscipit mollitia.
+    </main>
+  </body>
+  <script>
+    function hamburgerM() {
+      const navB = document.querySelector("nav ul");
+      return navB.classList.toggle("showMenu");
+    }
+  </script>
+</html>
