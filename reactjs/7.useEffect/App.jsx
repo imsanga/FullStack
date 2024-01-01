@@ -1,5 +1,5 @@
-// useEffect - it is used for fetching data, directly updating the Dom, timers.
-// It accepts two arguments --> useEffect(<function>, <dependency>)
+// useEffect - it is used for fetching data, directly updating the Dom & timers.
+// It accepts two arguments --> useEffect(<function>, [<dependency>])
 
 //*App.jsx*
 import "./App.css";

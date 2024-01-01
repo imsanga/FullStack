@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 export const TextDisplay = () => {
   const [textdisplay, setTextdisplay] = useState("");
 
