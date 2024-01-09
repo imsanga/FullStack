@@ -1,8 +1,9 @@
+// store - centralised store
 import { configureStore } from "@reduxjs/toolkit";
-import customerReducer from "./slices/customerSlice";
+import todoFeature from "./todo/todoSlice";
 
-export const MyStore = configureStore({
+export const myStore = configureStore({
   reducer: {
-    customers: customerReducer,
+    todo: todoFeature,
   },
 });

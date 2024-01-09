@@ -1,17 +1,17 @@
 // Redux = Action -> dispatch -> Reducer -> Store
 
 import "./App.css";
-import { CustomerAdd } from "./customerAdd";
 import { Provider } from "react-redux";
-import { MyStore } from "./store";
+import { myStore } from "./store";
+import AddTodo from "./components/AddTodo";
 
 function App() {
   return (
-    <Provider store={MyStore}>
-      <div className="App">
-        <CustomerAdd />
-      </div>
-    </Provider>
+    <div className="App">
+      <Provider store={myStore}>
+        <AddTodo />
+      </Provider>
+    </div>
   );
 }
 export default App;
