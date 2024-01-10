@@ -1,7 +1,4 @@
 // Test docFile
-
-// Redux = Action -> dispatch -> Reducer -> Store
-// App.jsx
 import "./App.css";
 
 function App() {
