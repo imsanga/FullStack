@@ -2,6 +2,7 @@
 // -> function with async always returns promise
 // -> await is only valid in async functions
 // -> we can call the promises without then() & catch() methods
+
 const friendsreached1 = new Promise((resolve, reject) => {
   let reached_or_not = true;
   if (reached_or_not)
