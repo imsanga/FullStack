@@ -1,0 +1,21 @@
+REST API[Representational State Transfer]: 
+-> The API created using RESTful Architecture is REST API.
+-> REST API can be used by any site or application no matter what language it is written in because the requests are based on the universal HTTP protocol, and the information is usually returned in the JSON format that almost all of the programming languages can read.
+-> flow: client -> httpMethods -> server
+         client <- httpMethods <- server
+-> CRUD:
+    Create: POST | Creates a new resource on the remote server.
+    Read: GET | Retrieves data from a remote server. It can be a single resource or a list of resources.
+    Update: PUT (r) PATCH |  PUT(Updates all the data on the remote server) Patch(Updates Specific data on the remote server)
+    Delete: DELETE | Deletes data from the remote server
+
+The HTTP status code
+Maybe the most important metadata which is sent in the head of the response is the HTTP status code. For example, a 404 code to indicate that the resource does not exist, and a 200 code to state that the resource exists and that the requested data is returned in the response body.
+
+The status codes can be divided into these groups:
+The class of 2XX (200, 201, 204) indicates that the data was received and the operation was performed.
+The class of 3XX (301, 302) redirects the request to another URL.
+The class of 4XX (403, 404) indicates that the resource was not found or not available to the client.
+The class of 5XX (500) to indicate a server error.
+
+referredResource: https://phpenthusiast.com/blog/what-is-rest-api
