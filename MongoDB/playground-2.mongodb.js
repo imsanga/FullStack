@@ -95,6 +95,7 @@ syntax : db.collectionName.deleteOne({query})
   eg: 2: db.collection.deleteMany({quote:{$exists:false}})
 
 12.comparison operators: 
+    $e -> equals
 	$ne -> not equal
 	$lt -> less than
 	$lte -> less than equals to
@@ -131,5 +132,40 @@ db.collection.getIndexes()
 	
 db.collection.dropIndex("name_of_index")
 // to drop the index
+
+15. Extras
+-> $inc - Increment the value of the field by the amount given
+eg: db.users.updateOne({ age: 12 }, { $inc: { age: 2 } })
+
+-> $rename - Rename a field
+eg: db.users.updateMany({}, { $rename: { age: “years” } })
+
+-> $push - Add a value to an array field
+eg: db.users.updateMany({}, { $push: { friends: “John” } })
+
+-> $pull - Remove a value from an array field
+eg: db.users.updateMany({}, { $pull: { friends: “Mike” } })
+
+-> skip - Skip a set number of documents from the beginning
+eg: db.users.find().skip(4)
+// Skip the first 4 users when returning results. This is great for pagination when 
+combined with limit
+
+-> findOne - The same as find, but only return the first document that 
+matches the filter object
+eg: db.users.findOne({ name: “Kyle” })
+// Get the first user with the name Kyle
+
+-> countDocuments - Return the count of the documents that match the filter object passed to it.
+eg: db.users.countDocuments({ name: “Kyle” })
+// Get the number of users with the name Kyle
+
+-> replaceOne - Replace the first document that matches the filter object 
+with the exact object passed as the second parameter. This 
+will completely overwrite the entire object and not just 
+update individual fields.
+eg: db.users.replaceOne({ age: 12 }, { age: 13 })
+// Replace the first user with an age of 12 with an object that has the age of 13 as 
+its only field
 
 */
