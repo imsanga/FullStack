@@ -107,7 +107,7 @@ syntax : db.collectionName.deleteOne({query})
 eg: 1: db.collection.find({gpa:{$gte:5, $lte:7}})
 //to find all the documents whose gpa attribute's value is between 5 and 7
 	
-eg: 2: db.collection.find({name:{$in:['value 1', 'value 2',  'value n']}})
+eg: 2: db.collection.find({name:{$in:['value 1', 'value 2', 'value n']}})
 //to find all the documents whose name attribute's value is mentioned "in" array
 	
 13.Logical operator:
