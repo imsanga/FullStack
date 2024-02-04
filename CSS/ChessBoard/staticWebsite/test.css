@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  width: 100%;
+}
+nav {
+  margin-top: 5vh;
+  border: 2px solid red;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+nav a {
+  margin: 5px;
+  padding: 4px;
+  text-decoration: none;
+}
+.featured,
+.additional,
+footer {
+  margin-top: 7vh;
+  text-align: center;
+}
+footer {
+  border: 2px solid green;
+}

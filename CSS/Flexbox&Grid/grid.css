@@ -49,14 +49,14 @@
 
 /**************/
 
-/* .container {
+.container {
   display: grid;
-  grid-template-columns: 100px 250px;
-  grid-template-columns: 150px 200px 350px;
+  grid-template-columns: 100px 200px 100px;
+  /* grid-template-columns: 150px 200px 350px;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-} */
+  grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+}
 
 /* .container {
   display: grid;
@@ -80,7 +80,7 @@
   place-items: end start;align + justify
 } */
 
-.container {
+/* .container {
   display: grid;
   height: 800px;
   grid-template: repeat(3, 200px) / repeat(3, 200px);
@@ -89,4 +89,4 @@
   place-content: center;
   justify-content: space-around;
   align-content: space-evenly;
-}
+} */

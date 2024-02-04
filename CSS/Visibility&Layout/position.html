@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Positions</title>
-    <link rel="stylesheet" href="position.css">
-</head>
-<body>
+    <link rel="stylesheet" href="position.css" />
+  </head>
+  <body>
     <div class="oc">
-        <div class="ic">
+      <div class="ic">
         <div class="box">
-            <p>Static</p>
-            <p>Note: The elements will be in regular document flow</p>
+          <p>Static</p>
+          <p>Note: The elements will be in regular document flow</p>
         </div>
         <div class="box relative">
-            <p>Relative</p>
-            <p>Note: we can perform offset(top,left,bottom,right) in static</p>
+          <p>Relative</p>
+          <p>Note: we can perform offset(top,left,bottom,right) in static</p>
         </div>
         <div class="box absolute">
-            <p>Absolute</p>
-            <p>Note: The elements go outside the regular document flow, it checks any non-static positions are there or not in parent, if not it aligns with root element. The remaining elements takes up it's space</p>
+          <p>Absolute</p>
+          <p>
+            Note: The elements go outside the regular document flow, it checks
+            any non-static positions are there or not in parent, if not - it
+            aligns with root element. The remaining elements takes up it's space
+          </p>
         </div>
-         <div class="box fixed">
-            <p>Fixed</p>
-            <p>Note: The elements get fixed in the document flow, it get aligns to the root element and we can perform offset to align the element</p>
-         </div>
-         <div class="box sticky">
-            <p>Sticky</p>
-            <p>Note: The elements get sticky in the document flow, it get aligns to the root element(eg:where it sticks when the element reaches Top: 0px) and we can perform offset to align the element</p>
-         </div>
-        </div>  
+        <div class="box fixed">
+          <p>Fixed</p>
+          <p>
+            Note: The elements get fixed in the document flow, it get aligns to
+            the root element and we can perform offset to align the element
+          </p>
+        </div>
+        <div class="box sticky">
+          <p>Sticky</p>
+          <p>
+            Note: The elements get sticky in the document flow, it get aligns to
+            the root element(eg:where it sticks when the element reaches Top:
+            0px) and we can perform offset to align the element
+          </p>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
-
-
