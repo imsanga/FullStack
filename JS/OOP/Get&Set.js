@@ -10,6 +10,7 @@ class Vote {
   }
   set age(age) {
     if (age < 18) this._age = "not elgible to vote";
+    else this._age = age;
   }
 }
 

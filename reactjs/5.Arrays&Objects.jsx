@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       {arrayName.map((userName, index) => (
         <h1 key={index}>
-          {userName} Index: {index}
+          {userName} || Index: {index}
         </h1>
       ))}
     </div>
@@ -32,7 +32,7 @@ export default App;
 //       {arrayName.map((ele, index) => {
 //         return (
 //           <h1 key={index}>
-//             {ele.name} {ele.age} Index: {index}
+//             {ele.name} {ele.age} || Index: {index}
 //           </h1>
 //         );
 //       })}
@@ -53,14 +53,13 @@ export default App;
 //     { name: "Kalidoss", age: 84 },
 //     { name: "Vijaya", age: 77 },
 //   ];
-
 //   return (
 //     <div className="App">
-//       {arrayName.map((user, index) => (
-//         <UserDetails
+//       {arrayName.map((ele, index) => (
+//         <FamilyMembers
 //           key={index}
-//           name={user.name}
-//           age={user.age}
+//           name={ele.name}
+//           age={ele.age}
 //           index={index}
 //         />
 //       ))}
@@ -68,14 +67,10 @@ export default App;
 //   );
 // }
 
-// const UserDetails = (props) => {
-//   return (
-//     <div>
-//       <h1>
-//         {props.name} {props.age} Index: {props.index}
-//       </h1>
-//     </div>
-//   );
-// };
+// const FamilyMembers = (props) => (
+//   <h2>
+//     Name: {props.name} Age: {props.age}|| Index: {props.index}
+//   </h2>
+// );
 
 // export default App;

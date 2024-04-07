@@ -4,8 +4,8 @@ export const TextDisplay = () => {
   const [textdisplay, setTextdisplay] = useState("");
 
   useEffect(() => {
-    console.log("Component Mounted");
-    return () => console.log("Component UnMounted");
+    console.log("Component Mounted"); //initial Rendered function
+    return () => console.log("Component UnMounted"); //CleanUp Function
   }, []);
 
   return (

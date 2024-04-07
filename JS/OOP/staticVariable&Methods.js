@@ -23,7 +23,7 @@ console.log(
   `Number of Users visited our site is : ${UserVariable.noOfUsersVisited}`
 );
 
-// Static Method - It is used in a class(globalMethod) and not on the instance(method) of the class.
+// Static Method
 class UserMethod {
   static noOfUsersVisited = 0;
   constructor(userName, ecommerceSite) {

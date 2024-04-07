@@ -31,7 +31,7 @@ export default class Temperature {
 // console.log(city_2.theTemperature);
 
 // //for importing as Module => HTML
-// <script type="module" src="Test.js"></script>;
+// <script type="module" src="Test.js"></script>
 
 // Export fnc
 export function greet() {

@@ -1,4 +1,5 @@
-//Streams&Buffers
+//Streams&Buffers - data is read as chunks, temporarily stored in buffer -> again the data's in buffer is proccesed and sent to the client.
+// This process of reading data in chunks, buffering it temporarily, processing it, and then sending it to the client is a common pattern in I/O operations and data handling
 const myServer9 = require("http");
 const myFileSystem2 = require("fs");
 myServer9
@@ -16,11 +17,11 @@ myServer9
       return response.end();
     }
     if (url === "/message" && method == "POST") {
-      const receivedMessage = [];
-      request.on("data", (chunk) => receivedMessage.push(chunk));
-      return request.on("end", () => {
-        const storedMessage = Buffer.concat(receivedMessage).toString();
-        const extractMessage = storedMessage.split("=");
+      const chunkContainer = [];
+      request.on("data", (chunk) => chunkContainer.push(chunk));
+      request.on("end", () => {
+        const concatContainer = Buffer.concat(chunkContainer).toString();
+        const extractMessage = concatContainer.split("=");
         myFileSystem2.writeFileSync(
           "node.txt",
           `U must achieve ${extractMessage[1]}!!!`

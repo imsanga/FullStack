@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-const textDecor = {
-  textDecoration: "none",
-  fontSize: "20px",
-};
-
 export const Navbar = () => {
+  const textDecor = {
+    textDecoration: "none",
+    fontSize: "20px",
+  };
+
   return (
     <>
       <span>NAVBAR: </span>&nbsp;

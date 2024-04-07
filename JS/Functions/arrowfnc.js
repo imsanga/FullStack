@@ -6,10 +6,10 @@
 
 // name();
 
-const name = () => {
+const personName = () => {
   let fname = "Sangameshwaran";
   let lname = "Natarajan";
   return fname + " " + lname;
 };
 
-console.log(name());
+console.log(personName());

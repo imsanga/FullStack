@@ -1,0 +1,50 @@
+EJS, or Embedded JavaScript templating, is a templating language that lets you generate HTML markup with plain JavaScript. It's a great tool for building dynamic web pages from templates. Here's a basic guide on how to use EJS in an Express application.
+
+Step 1: Set Up Express
+First, ensure you have EJS installed in your project. If you haven't installed them yet, you can do so by running:
+
+npm install ejs
+
+Step 2: Create Your Express App
+In your project directory, create a file named app.js (or any name you prefer). Here's a simple Express setup that uses EJS:
+
+const express = require('express');
+const app = express();
+
+// Set EJS as the templating engine
+app.set('view engine', 'ejs');
+
+// A route that renders an EJS view
+app.get('/', (req, res) => {
+  res.render('index', { title: 'Hello EJS', message: 'Welcome to EJS!' });
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
+Step 3: Create Your EJS View
+Inside your project, create a directory named views. Inside views, create a file named index.ejs. This will be your EJS template for the / route. Here's a basic example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1><%= message %></h1>
+</body>
+</html>
+
+In this index.ejs file, <%= title %> and <%= message %> are placeholders that EJS replaces with the values you pass from your Express route (res.render('index', { title: 'Hello EJS', message: 'Welcome to EJS!' });).
+
+
+Explanation
+EJS uses <% %> tags to embed JavaScript into HTML. There are a few different tags you can use:
+
+<%= %>: Outputs the value into the template (HTML escaped)
+<%- %>: Outputs the unescaped value into the template (useful for including raw HTML)
+<% %>: Runs JavaScript code but does not output anything
+
+This setup allows you to create dynamic templates based on the data you pass to res.render from your routes, enabling the generation of HTML content on the fly.

@@ -6,7 +6,7 @@ let setarray = [
 let output = new Set(setarray);
 for (let elements of output) console.log(elements);
 
-//Map => It Stores the elements in key value pair, it does not store the duplicate key, but it updates the duplicate key -> value.
+//Map => It Stores the elements in key value pair. If duplicate key is given, it updates the duplicate key -> value.
 let arr_Map = [
   ["Sanga", 5],
   ["Santha", 9],

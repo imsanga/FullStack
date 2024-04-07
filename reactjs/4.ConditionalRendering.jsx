@@ -3,10 +3,10 @@
 import "./App.css";
 
 function App() {
-  const name = "TestUser";
-  const isEligibleAge = 16;
-  const isEligible = false;
-  const voted = false;
+  const name = "TestUser",
+    isEligibleAge = 18,
+    isEligible = true,
+    voted = true;
   return (
     <div className="App">
       {isEligibleAge >= 18 ? (

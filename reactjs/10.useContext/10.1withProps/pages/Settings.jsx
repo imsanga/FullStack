@@ -1,13 +1,10 @@
 import { ChangeProfile } from "../ChangeProfile";
 
-export const Settings = (props) => {
+export const Settings = ({ username, setusername }) => {
   return (
     <div>
       <br />
-      <ChangeProfile
-        username={props.username}
-        changeUsername={props.setusername}
-      />
+      <ChangeProfile username={username} changeUsername={setusername} />
     </div>
   );
 };

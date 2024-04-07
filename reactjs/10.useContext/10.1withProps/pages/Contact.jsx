@@ -1,7 +1,5 @@
-export const Contact = (props) => {
+export const Contact = ({ username }) => {
   return (
-    <h1 style={{ color: "brown" }}>
-      Welcome to Contact Page {props.username}!!!
-    </h1>
+    <h1 style={{ color: "indigo" }}>Welcome to Contact Page {username}!!!</h1>
   );
 };

@@ -1,4 +1,8 @@
 // *ReactQuery* -> *useQuery*
+//step 1: create a client
+//step 2: provide the client to ur app
+//step 3: fetch the data using useQuery
+
 import "./App.css";
 import { useState, createContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -11,14 +15,16 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 export const AppContext = createContext();
 
+//step 1: create a client
 const queryClient = new QueryClient();
 
 function App() {
   const [userName, setUserName] = useState("Sanga");
   return (
     <div className="App">
-      <AppContext.Provider value={{ userName, setUserName }}>
-        <QueryClientProvider client={queryClient}>
+      {/* //step 2: provide the client to ur app */}
+      <QueryClientProvider client={queryClient}>
+        <AppContext.Provider value={{ userName, setUserName }}>
           <Router>
             <Navbar />
             <Routes>
@@ -29,8 +35,8 @@ function App() {
               <Route path="*" element={<h1>Page Not Found</h1>} />
             </Routes>
           </Router>
-        </QueryClientProvider>
-      </AppContext.Provider>
+        </AppContext.Provider>
+      </QueryClientProvider>
     </div>
   );
 }

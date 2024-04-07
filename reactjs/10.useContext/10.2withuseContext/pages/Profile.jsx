@@ -1,7 +1,9 @@
-import { AppContext } from "../App";
 import { useContext } from "react";
+import { AppContext } from "../App";
 
 export const Profile = () => {
   const { userName } = useContext(AppContext);
-  return <h1 style={{ color: "green" }}>Welcome to Home Page {userName}!!!</h1>;
+  return (
+    <h1 style={{ color: "orange" }}>Welcome to Profile Page {userName}!!!</h1>
+  );
 };

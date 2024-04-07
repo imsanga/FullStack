@@ -1,7 +1,5 @@
-export const Profile = (props) => {
+export const Profile = ({ username }) => {
   return (
-    <h1 style={{ color: "green" }}>
-      Welcome to Profile Page {props.username}!!!
-    </h1>
+    <h1 style={{ color: "orange" }}>Welcome to Profile Page {username}!!!</h1>
   );
 };

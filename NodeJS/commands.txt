@@ -1,0 +1,4 @@
+=> npm init - it creates package.json
+=> npm start - it helps to run the nodejs file which we configure in package.json
+=> npm i nodemon --save-dev - nodemon development dependency
+=> npm i nodemon --save - nodemon production dependency

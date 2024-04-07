@@ -1,4 +1,4 @@
-// In React, a "state" is a built-in object that represents the current condition or data of a component
+// In React, a "state" is a built-in feature that represents the current condition or data of a component
 // 'useState' hook returns an array with two elements: the current state value and a function to update the state.
 
 // *useState - 0*

@@ -1,29 +1,29 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-const textDecor = {
-  textDecoration: "none",
-  fontSize: "20px",
-};
+const Navbar = () => {
+  const linkStyle = {
+    textDecoration: "none",
+    marginRight: "10px",
+    color: "blue",
+  };
 
-export const Navbar = () => {
   return (
     <>
-      <span>NAVBAR: </span>&nbsp;
-      <Link to="/" style={textDecor}>
+      <Link to="/" style={linkStyle}>
         Home
       </Link>
-      &nbsp;
-      <Link to="/profile" style={textDecor}>
+      <Link to="/profile" style={linkStyle}>
         Profile
       </Link>
-      &nbsp;
-      <Link to="/contact" style={textDecor}>
+      <Link to="/contact" style={linkStyle}>
         Contact
       </Link>
-      &nbsp;
-      <Link to="/settings" style={textDecor}>
+      <Link to="/settings" style={linkStyle}>
         Settings
       </Link>
     </>
   );
 };
+
+export default Navbar;

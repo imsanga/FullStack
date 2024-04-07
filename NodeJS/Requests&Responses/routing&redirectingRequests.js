@@ -4,7 +4,7 @@ myServer7
   .createServer((request, response) => {
     const url = request.url;
     if (url === "/") {
-      response.setHeader("Content-Type", "text/html");
+      response.writeHead(200, { "Content-Type": "text/html" });
       response.write("<html>");
       response.write("<head><title>Forms</title></head>");
       response.write(
@@ -14,10 +14,10 @@ myServer7
       return response.end();
     }
 
-    response.setHeader("Content-Type", "text/html");
+    response.writeHead(200, { "Content-Type": "text/html" });
     response.write("<html>");
-    response.write("<head><title>Sanga</title></head>");
-    response.write("<body><h1>Node.js!!!</h1></body>");
+    response.write("<head><title>Forms</title></head>");
+    response.write("<body><h1>Form Submitted successfully!!!</h1></body>");
     response.write("</html>");
     response.end();
   })
@@ -31,7 +31,7 @@ myServer8
     const url = request.url;
     const method = request.method;
     if (url === "/") {
-      response.setHeader("Content-Type", "text/html");
+      response.writeHead(200, { "Content-Type": "text/html" });
       response.write("<html>");
       response.write("<head><title>Forms</title></head>");
       response.write(
@@ -44,14 +44,22 @@ myServer8
       myFileSystem1.writeFileSync("node.txt", "U must achieve Sanga!!!");
       // response.setHeader("Location", "/");
       // response.statusCode = 302;
-      response.writeHead(302, { Location: "/" });
+      response.writeHead(302, { Location: "/submission" });
+      return response.end();
+    }
+    if (url === "/submission") {
+      response.writeHead(200, { "Content-Type": "text/html" });
+      response.write("<html>");
+      response.write("<head><title>Forms</title></head>");
+      response.write("<body><h1>Form Submitted successfully!!!</h1></body>");
+      response.write("</html>");
       return response.end();
     }
 
-    response.setHeader("Content-Type", "text/html");
+    response.writeHead(404, { "Content-Type": "text/html" });
     response.write("<html>");
-    response.write("<head><title>Sanga</title></head>");
-    response.write("<body><h1>Node.js!!!</h1></body>");
+    response.write("<head><title>404 Error</title></head>");
+    response.write("<body><h1>404 Page not found!!!</h1></body>");
     response.write("</html>");
     response.end();
   })

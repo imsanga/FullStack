@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addToDo, removeToDo } from "../../src/todo/todoSlice";
+import { addToDo, removeToDo } from "../todo/todoSlice";
 
 const AddTodo = () => {
   const [input, setInput] = useState("");
