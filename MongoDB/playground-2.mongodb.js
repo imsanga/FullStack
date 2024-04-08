@@ -17,7 +17,9 @@ syntax: db.createCollection(collectionName)
     
 3.2 To show collections: show collections
 
-3.3 To drop collections: db.collectionName.drop()
+3.3 To drop collections: 
+syntax: db.collectionName.drop()
+    eg: db.collection.drop()
 
 4. Delete the Database : db.dropDatabase()
 
@@ -64,7 +66,7 @@ syntax: db.collectionName.find().limit(n) // it displays 'n' number of available
     eg: db.collection.find().limit(1)   // displays only 1 student(since limit is set as "1")
 
 9.To find the particular data's in collection: 
-{query} - selects all the data if it is blank or else it selects the field given inside that {name:"sanga"}
+{filter} - selects all the data if it is blank or else it selects the field given inside that {name:"sanga"}
 {projection} - it specifies which field we want to display , if we keep {name:true, _id:false} - it displays only "name" field and omits ID
 syntax: db.collectionName.find({query},{projection})
  eg: 1: db.collection.find({name: "virat"}); //querys only the name with "virat"
@@ -160,10 +162,7 @@ eg: db.users.findOne({ name: “Kyle” })
 eg: db.users.countDocuments({ name: “Kyle” })
 // Get the number of users with the name Kyle
 
--> replaceOne - Replace the first document that matches the filter object 
-with the exact object passed as the second parameter. This 
-will completely overwrite the entire object and not just 
-update individual fields.
+-> replaceOne - Replace the first document that matches the filter object with the exact object passed as the second parameter. This will completely overwrite the entire object and not just update individual fields.
 eg: db.users.replaceOne({ age: 12 }, { age: 13 })
 // Replace the first user with an age of 12 with an object that has the age of 13 as 
 its only field
