@@ -9,13 +9,19 @@ myMongoose
 //store the documents in created collection
 async function studentData() {
   try {
-    const student1 = await Students.create({
+    await Students.create({
       name: "Sanga",
-      age: "bjbjdgkd",
-      hobbies: ["Coding", "Reading blogs"],
+      age: 23,
+      email: "imsanga05@gmail.com",
+      createdAt: Date.now(),
+      updatedAt: Date.now(),
+      hobbies: ["Coding", "Reading blogs", "Watching Youtube"],
+      address: {
+        street: "No:5, south mariana road, sydney's castle",
+        city: "Sydney, Australia",
+      },
     });
-    await student1.save();
-    console.log("Student1 data stored");
+    console.log("Data stored");
   } catch (err) {
     console.log(err.message);
   }

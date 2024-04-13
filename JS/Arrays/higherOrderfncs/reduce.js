@@ -3,9 +3,10 @@
 
 //Example_1
 const donations = [1, 2, 3, 4, 5];
-let ans = donations.reduce((previousvalue, presentvalue) => {
-  return previousvalue + presentvalue;
-}, 5);
+let ans = donations.reduce(
+  (previousvalue, presentvalue) => previousvalue + presentvalue,
+  5
+);
 console.log(ans);
 
 // combine(filter,map,reduce)

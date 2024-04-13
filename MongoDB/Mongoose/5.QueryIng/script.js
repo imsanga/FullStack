@@ -12,13 +12,14 @@ async function studentData() {
     // const student1 = await Students.findById("65a1a7cbb579fa4fe70fa17e");
     // const student1 = await Students.find({ name: "Sanga" });
     // const student1 = await Students.exists({ name: "Sanga" });
+
     const student1 = await Students.where("name")
       .gt(12)
       .lt(27)
       .equals("Sanga")
-      .populate("bestFriend")
+      // .populate("bestFriend")
       .limit(1);
-    // (student1[0].bestFriend = "65a1a0d0f44190cef2a6fb4a"),
+    student1[0].bestFriend = "65a1a0d0f44190cef2a6fb4a";
     await student1[0].save();
     console.log(student1);
   } catch (err) {

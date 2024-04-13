@@ -13,14 +13,19 @@ const mySchema = new schemaMongoose.Schema({
     required: true,
     min: 1,
     max: 30,
+    validate: {
+      validator: (value) => value % 2 === 0,
+      message: (props) => `${props.value} is not even `,
+    },
   },
   email: {
     type: String,
     lowercase: true,
-    minLngth: 10,
+    minLength: 10,
   },
   createdAt: {
     type: Date,
+    immutable: true,
     default: new Date(),
   },
   updatedAt: {

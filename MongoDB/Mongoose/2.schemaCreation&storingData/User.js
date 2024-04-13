@@ -10,3 +10,13 @@ const mySchema = new schemaMongoose.Schema({
 
 //model creation
 module.exports = schemaMongoose.model("Students", mySchema);
+
+// eg : 2.0
+// const myMongoose = require("mongoose");
+
+// const teams = new myMongoose.Schema({
+//   playerName: String,
+//   jerseyNo: Number,
+// });
+// // Explicitly setting the collection name to 'CSK' or it automatically pluralize to "csks"
+// module.exports = myMongoose.model("CSK", teams, "CSK");

@@ -39,8 +39,8 @@ mySchema.methods.sayHi = function () {
   console.log(`Hi ${this.name}`);
 };
 
-mySchema.statics.findYname = function (name) {
-  return this.where({ name });
+mySchema.statics.findYname = function (dummy) {
+  return this.findOne({ name: dummy });
 };
 
 mySchema.query.findZname = function (name) {

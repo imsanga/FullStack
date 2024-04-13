@@ -3,6 +3,7 @@
 //seperates string into each characters
 let myfam = "Sangameshwaran";
 console.log(...myfam);
+console.log([...myfam]);
 
 // //seperates array into seperate elements
 // let arr = [1, 2, 3, 4, 5];
