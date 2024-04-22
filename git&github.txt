@@ -1,0 +1,56 @@
+--> git - It is a software tool for version control
+    -> version control - to keep track of code 
+
+--> github - to host the git repositories
+
+--> git clone - to take the existing repo, clone it & use it locally 
+syntax: git clone <url>
+eg: git clone https://github.com/imsanga/test-project.git
+
+--> git add: which all files u need to track - add it
+syntax: git add <filename>
+eg: git add add.js
+   -> to add all files - git add .
+
+--> git commit - commit the code to the local repo
+syntax: git commit -m "msg"
+eg: git commit -m "added the addition functionality"
+
+--> to commit all the files which u changed [shrtCut] [note: only the already tracked files]
+syntax: git commit -am "msg"
+eg: git commit -am "added the addition functionality"
+
+--> git status - gives the current status of the repo  
+syntax: git status
+
+--> git push - it pushes the code from local repo to github repo  
+syntax: git push
+
+--> git pull - it pulls the code from github repo to local repo
+syntax: git pull
+
+--> Merge conflicts - if a variable is changed in github repo and commited and we changed the same variable in local repo and commited. If we pull the code, it throws "merge conflict is occured"
+
+--> git reset - to reset with already commited code
+syntax: git reset --hard <commitHash>
+eg: git reset --hard 6ef3bc195438df824ebac884a6b37bc6c8b7a64e
+syntax: reset branch - git reset --hard origin/master
+
+--> Branching - to avoid linear approach which makes hard to debug errors, we use branching.
+ -> to show all the branch use - git branch
+
+--> create new branch
+syntax: git checkout -b "branchName" || git branch <branchName>
+eg: git checkout -b "newBranch" || git branch newBranch
+
+--> push a new branch 
+syntax: git push origin <brannchName>
+eg: git push origin newBranch 
+
+--> to shift to already created branch
+syntax: git checkout <branchname>
+eg: git checkout main
+
+--> merge - to merge the code changes from one branch to other
+syntax: git merge <branchname>
+eg: git merge newBranch
