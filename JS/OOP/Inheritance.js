@@ -1,4 +1,5 @@
 //Inheritance - the child(derived) class is inherited from the parent(base) class
+//Super keyword - it is used to invoke constructor & methods from a parent class
 class User {
   static noOfUsersVisited = 0;
   constructor(userName, ecommerceSite) {

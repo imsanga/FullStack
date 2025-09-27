@@ -1,2 +1,2 @@
 Prototype:
-In JavaScript, a prototype is an object from which other objects inherit properties and methods. Every object in JavaScript has a prototype.
+In JavaScript, a prototype is an object from which properties and methods are inherited.

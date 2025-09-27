@@ -1,6 +1,6 @@
 // Class - It acts as an template or blueprint for an object
-// Object - "n" no of objects can be created from a class. We can access methods inside a class using objects
-// Constructor - It is an method of a class, which gets invoked(automatically) immediately after the object is created
+// Object - "n" no of objects can be created from a class.
+// Constructor - It is an method of a class, which gets invoked immediately after the object is created
 
 class User {
   constructor(userName, ecommerceSite) {

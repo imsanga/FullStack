@@ -1,5 +1,3 @@
-//Streams&Buffers - data is read as chunks, temporarily stored in buffer -> again the data's in buffer is proccesed and sent to the client.
-// This process of reading data in chunks, buffering it temporarily, processing it, and then sending it to the client is a common pattern in I/O operations and data handling
 const myServer9 = require("http");
 const myFileSystem2 = require("fs");
 myServer9

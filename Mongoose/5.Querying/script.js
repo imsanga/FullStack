@@ -17,7 +17,7 @@ async function studentData() {
       .gt(12)
       .lt(27)
       .equals("Sanga")
-      // .populate("bestFriend")
+      // .populate("bestFriend") //.populate() is used to fetch data from other collection
       .limit(1);
     student1[0].bestFriend = "65a1a0d0f44190cef2a6fb4a";
     await student1[0].save();

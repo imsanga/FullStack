@@ -1,0 +1,10 @@
+=> Internet - 2 or more devices that can communicate with each other over a network is known as Internet.
+=> Software - a set of instructions given to the computer to perform a specific tasks.
+=> Plugins - it gives additional features on top of the software without affecting its core functionality.
+=> compiler - converts the source code into machine code and generates a exe file.
+=> compile time - the time in which the source code is converted to machine code.
+=> run time - the time in which the program is running, it occurs after the compile time.
+shrtCut:
+=> comment line - ctrl + /
+=> vsCode zoom - ctrl + +-
+=> open the dev tools - ctrl + shift + i or press [f12] in windows

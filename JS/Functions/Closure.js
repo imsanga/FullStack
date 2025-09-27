@@ -1,4 +1,4 @@
-// closure - inner fnc binds the outer fnc variable
+// closure - inner fnc remembers the outer fnc variables, even after the outer function gets executed.
 
 //Example_1
 function addvar1(x) {

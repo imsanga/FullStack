@@ -18,6 +18,8 @@ async function status1() {
     console.log(`Bye...`);
   } catch (err) {
     console.log(err);
+  } finally {
+    console.log("final");
   }
 }
 status1();

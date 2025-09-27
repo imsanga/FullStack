@@ -1,5 +1,5 @@
 // JSON - Javascript Object Notation
-// It is used for Data transmission from the server
+// It is a data format used for storing and transferring data between a server and a client
 
 // let jsonObj = { //strings should be given in double quotes in keys also
 //     "Stock": "TCS",

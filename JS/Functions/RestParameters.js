@@ -1,4 +1,4 @@
-// we can pass indefinite arguments to a fnc, where it stores the parameters in the form of array
+// we can pass indefinite no of arguments to a fnc, where it stores the parameters in the form of array
 function personDetails(...name) {
   for (let pname of name) console.log(pname);
 }

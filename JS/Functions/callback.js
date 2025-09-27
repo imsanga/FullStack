@@ -1,4 +1,4 @@
-//callbackFnc - function passed as an argument
+//callbackFnc - function passed as an argument to another fnc
 //Example_1
 function multiply(n1, n2) {
   return n1 * n2;

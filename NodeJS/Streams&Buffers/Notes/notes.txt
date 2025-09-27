@@ -1,0 +1,14 @@
+Streams
+* Streams are sequence of data that is being moved from one point to another over a time.
+eg: stream of data is moved over the internet from one computer to another
+*Stream of data is proccessed in chunks as they arrive instead of waiting for the entire data to arrive and proccess it
+* It improves memory efficiency & performance
+
+Buffers
+* It is a temporary storage area that nodejs maintains during the runtime where chunks gets stored
+
+flow
+* data received is read in chunks and stored in buffer
+* once the buffer as enough data to process, event is triggered 
+* Event's callback function is placed to callback queue by eventloop
+* once the callstack is empty the eventloop sends the callback function to callstack

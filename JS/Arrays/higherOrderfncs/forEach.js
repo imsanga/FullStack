@@ -1,4 +1,4 @@
-//foreach - takes each element from the array and calls the callbackfnc
+//forEach - takes each element from the array and calls the callbackfnc
 // (element, index, array)
 //note: forEach doesn't return anything
 

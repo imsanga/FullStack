@@ -1,4 +1,5 @@
 // function borrowing
+// call, apply, and bind methods - it allows a function to access object properties by setting the this context to that object.
 // callMethod - It is used to invoke a fnc directly
 // Syntax: function.call(thisArg, arg1, arg2, ...)
 
@@ -7,7 +8,7 @@ let personName1 = {
   lastname: "Natarajan",
 };
 
-let personDetails = function (hometown, settledtown) {
+function personDetails(hometown, settledtown) {
   console.log(
     this.firstName +
       " " +
@@ -17,7 +18,7 @@ let personDetails = function (hometown, settledtown) {
       ", settledtown is " +
       settledtown
   );
-};
+}
 
 personDetails.call(personName1, "Chennai, Tamilnadu", "Sydney, Australia");
 

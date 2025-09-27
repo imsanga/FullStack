@@ -1,15 +1,12 @@
 /*schema - In Mongoose, a schema defines the structure of the documents within a MongoDB collection. It specifies the fields, their types, validation rules, default values, and other options*/
 
-//Schema Creation
-const schemaMongoose = require("mongoose");
+const mongoose = require("mongoose");
 
-const mySchema = new schemaMongoose.Schema({
-  name: String,
-  age: Number,
-});
+//Schema Creation - Schema defines the structure of documents
+const schema = new mongoose.Schema({ name: String, totalMark: Number });
 
-//model creation
-module.exports = schemaMongoose.model("Students", mySchema);
+//model creation - Model is the interface to interact with the collection using that structure
+module.exports = mongoose.model("Std12", schema);
 
 // eg : 2.0
 // const myMongoose = require("mongoose");

@@ -48,3 +48,7 @@ EJS uses <% %> tags to embed JavaScript into HTML. There are a few different tag
 <% %>: Runs JavaScript code but does not output anything
 
 This setup allows you to create dynamic templates based on the data you pass to res.render from your routes, enabling the generation of HTML content on the fly.
+
+
+* EJS (Embedded JavaScript) is a templating engine
+* It is commonly used with Express.js to generate dynamic HTML pages.

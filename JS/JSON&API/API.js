@@ -1,5 +1,5 @@
 /* API - Application Programming Interface
--> It is a software intermediary that allows 2 applications to talk to each other
+-> It acts as a bridge that allows two applications to communicate with each other.
 request from client to server: Client(weatherApp) -> API(googleWeatherAPI) -> Server(googleWeatherServer)
 response from server to client: Server -> API -> Client
 -> REST(RestfulApi): Representational State Transfer - JSON format

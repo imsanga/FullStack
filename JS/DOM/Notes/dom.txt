@@ -1,0 +1,2 @@
+* When a web page is loaded, browser creates a document object model of the page.
+* For accessing the dom, js provides methods to access and modify the dom, that allows dynamic changes to webpages.

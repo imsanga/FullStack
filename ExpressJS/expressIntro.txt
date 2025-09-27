@@ -1,0 +1,8 @@
+* Express.js is a Node.js framework, used to build web applications and APIs
+
+Request Flow in Express.js
+1️⃣ Client sends a request (e.g., GET / or POST /message).
+2️⃣ Middleware processes the request (e.g., logging, parsing body, authentication).
+3️⃣ Route handlers handle the request (e.g., sending a response).
+4️⃣ Response is sent back to the client.
+

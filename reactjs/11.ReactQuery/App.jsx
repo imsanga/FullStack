@@ -1,4 +1,4 @@
-// *ReactQuery* -> *useQuery*
+// *ReactQuery* -> *useQuery* - React Query is a data-fetching and state management library
 //step 1: create a client
 //step 2: provide the client to ur app
 //step 3: fetch the data using useQuery

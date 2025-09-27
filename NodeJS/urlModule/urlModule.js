@@ -5,8 +5,8 @@ sangaServer
     let parsedURL = localhostURL.parse(req.url, true).query;
     console.log(localhostURL.parse(req.url, true));
     res.writeHead(200, { "content-type": "text/html" });
-    res.write(parsedURL.year);
-    res.write(parsedURL.month);
+    res.write(parsedURL.year ?? "year is missing");
+    res.write(parsedURL.month ?? "month is missing");
     res.end();
   })
   .listen(5500);

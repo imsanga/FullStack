@@ -1,5 +1,5 @@
 // function borrowing
-// bindMethod - it doesn't invokes the fnc directly, whereas it creates a new fnc(copy) - which can be invoked later
+// bindMethod - it binds the fnc with the object and returns a new fnc which can be invoked later.
 // Syntax: function.bind(thisArg, arg1, arg2, ...)
 
 let personName1 = {

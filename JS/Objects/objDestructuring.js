@@ -1,4 +1,4 @@
-// ObjectDestructing - we assign Objects->property(key) as an variable
+// ObjectDestructuring - It assigns Objects->property(key) as an variable, so that we can access the objects value without using dot notation
 
 // #example_1
 const personDetails1 = {

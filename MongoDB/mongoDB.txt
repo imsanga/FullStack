@@ -1,4 +1,9 @@
 /*
+MongoDB
+* It is a noSql database
+* It stores data in json like documents which is in bson (binary json) format
+* It uses collections instead of tables & documents instead of rows
+
 MongoDB Example CodeBase:
 
 const database = "college";
@@ -72,9 +77,9 @@ syntax: db.collectionName.find({query},{projection})
  eg: 1: db.collection.find({name: "virat"}); //querys only the name with "virat"
  eg: 2: db.collection.find({}, { _id: false, name: true }); //shows only name field
 
-10.1 To update single data in the collection : 
+10.1 To update single data in the collection :
 ($set) - to update a field
-($unset) - to delete the already existing field
+($unset) - to delete the field
 ($exists) - checks whether the data is there to filter it out
 
 syntax: db.collectionName.updateOne({filter}, {update})
@@ -150,8 +155,7 @@ eg: db.users.updateMany({}, { $pull: { friends: “Mike” } })
 
 -> skip - Skip a set number of documents from the beginning
 eg: db.users.find().skip(4)
-// Skip the first 4 users when returning results. This is great for pagination when 
-combined with limit
+// Skip the first 4 users when returning results. This is great for pagination when combined with limit
 
 -> findOne - The same as find, but only return the first document that 
 matches the filter object

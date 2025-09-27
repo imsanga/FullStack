@@ -1,0 +1,17 @@
+Javascript
+=> Javascript is a programming language designed to interact with elements of web pages. 
+=> It was founded by Brendan Eich
+=> It has three main parts,
+1. ECMAscript - It provides the core functionality
+2. Document Object Model (DOM) - It provides interfaces for interacting with the elements of web pages
+3. Browser Object Model (BOM) - It provides browser API for interacting with the web browsers
+=> Javascript is a synchronous single threaded language - executes line by line
+
+Execution Context
+=> everything in js happens inside the execution context.
+=> when a js code starts executing it creates a global execution context.
+=> It has 2 phases --> 
+1. memory creation phase - it allocates memory
+2. code execution phase - it executes line by line
+=> whenever a new fnc is invoked, new execution context is created. once the fnc is returned the execution context gets deleted.
+=> Call stack maintains the order of execution of execution contexts.

@@ -1,4 +1,5 @@
-// In React, a "state" is a built-in feature that represents the current condition or data of a component
+// In React, a "state" is a built-in feature that represents the current condition or data of a component.
+// Hooks allow function components to have access to state and other React features
 // 'useState' hook returns an array with two elements: the current state value and a function to update the state.
 
 // *useState - 0*
@@ -34,7 +35,7 @@ export default App;
 // import { useState } from "react";
 
 // function App() {
-//   const [age, setAge] = useState(0);
+//   let [age, setAge] = useState(0);
 //   return (
 //     <div className="App">
 //       <h1>{age}</h1>

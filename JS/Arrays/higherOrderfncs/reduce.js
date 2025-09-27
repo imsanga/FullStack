@@ -1,4 +1,4 @@
-// reduce - takes each element from the array and calls the callbackfnc(same as forEach), but reduce performs the given operations, accumulates it in(previous_value) and returns a accumulated result
+// reduce - takes each element from the array and calls the callbackfnc(same as forEach), but reduce performs the given operations, accumulates it(previous_value) and returns a accumulated result
 // ((previous_value(default:0), current_value, index, array), initialvalue)
 
 //Example_1

@@ -1,4 +1,4 @@
-// filter - takes each element from the array and calls the callbackfnc(same as forEach), but filter checks the given condition & returns a new array
+// filter - takes each element from the array and calls the callbackfnc(same as forEach), but filter checks the given condition[true or false] & returns a new array
 // (element, index, array)
 
 //Example_1

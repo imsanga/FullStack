@@ -1,0 +1,33 @@
+actions is a object which has action creators which is used for dispatching
+
+reducer is a function that updates the store with update state
+
+
+function reducer(state = [], action) {
+  switch (action.type) {
+    case "todoFeature/addToDo":
+      return [...state, action.payload];
+      
+    case "todoFeature/removeToDo":
+      return state.filter((_, index) => index !== action.payload);
+
+    default:
+      return state;
+  }
+}
+
+
+
+
+action is dispatched 
+dispatch function sends action to store
+store forwards action to reducer 
+reducer updates the state
+store notifies the component via useSelector
+component is re rendered with the updated state
+
+
+
+The useDispatch hook returns dispatch function, which is used to send actions to the Redux store.
+
+The useSelector hook allows components to extract data from the Redux store.
