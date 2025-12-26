@@ -1,5 +1,0 @@
-public -> accessible from anywhere
-private -> Accessible only within the same class
-protected -> Protected members are accessible within the same package and in subclasses outside the package using inheritance.
-default -> Accessible only within the same package
-package -> it groups related classes and interfaces together.

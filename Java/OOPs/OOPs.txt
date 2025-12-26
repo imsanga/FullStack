@@ -1,0 +1,14 @@
+public -> accessible from anywhere
+private -> Accessible only within the same class
+protected -> Protected members are accessible within the same package and in subclasses outside the package using inheritance.
+default -> Accessible only within the same package
+package -> it groups related classes and interfaces together.
+
+super keyword:
+-> It can access parent class data members (variables) except private.
+-> It can access parent class methods except private.
+-> It can access parent class constructors using super().
+
+Encapsulation vs Abstraction
+Encapsulation wraps data (variables) with methods and hides the data using access modifiers.
+Abstraction wraps the class logic and exposes only the required functionality using interfaces or abstract classes.
