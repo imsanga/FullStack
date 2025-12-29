@@ -343,3 +343,94 @@ DROP CHECK checkSalary;
 
 ALTER TABLE employee
 DROP CONSTRAINT checkSalary;
+-- foreign key - it connects 2 tables
+-- A foreign key is a column that references the primary key of another table
+
+CREATE TABLE branch (
+branch_id INT PRIMARY KEY AUTO_INCREMENT,
+br_name VARCHAR(30) NOT NULL,
+addr VARCHAR(200)
+);
+
+INSERT INTO branch (br_name, addr) VALUES
+('Downtown Branch', '12 Main Street, City Center'),
+('North Branch', '45 North Avenue, Uptown Area'),
+('East Branch', '78 Sunrise Road, East District');
+
+SELECT * FROM branch;
+
+ALTER TABLE employee 
+ADD Branch_id INT,
+ADD CONSTRAINT fk_branchId 
+FOREIGN KEY(Branch_id) REFERENCES branch(branch_id);
+
+ALTER TABLE employee
+DROP FOREIGN KEY fk_branchId;
+
+UPDATE employee SET Branch_id = 1 WHERE Employee_ID IN (1,2,3,12);
+UPDATE employee SET Branch_id = 2 WHERE Employee_ID IN (4,5,7,9);
+UPDATE employee SET Branch_id = 3 WHERE Employee_ID IN (6,8,10,11,13);
+
+
+-- index
+-- MySQL uses a B-Tree–based index structure, specifically a B+-Tree, to implement indexes.
+-- Primarykey, foreign key, unique - automatically it takes indexing
+
+SHOW INDEX FROM employee; -- show all index
+
+CREATE INDEX name_index ON employee(Employee_Name); -- create index
+
+ALTER TABLE employee ADD INDEX name_index (Employee_Name); -- create index
+ALTER TABLE employee DROP INDEX name_index; -- delete index
+
+
+-- on delete
+-- CASCADE - on deleting a row in branch table, the corresponding entries in employee table will be deleted
+-- NULL - on deleting a row in branch table, the branchid corresponding entries in employee table will be made null
+
+CREATE TABLE employee (
+emp_id INT PRIMARY KEY AUTO_INCREMENT,
+ename VARCHAR(30) NOT NULL,
+job_desc VARCHAR(20),
+salary INT,
+branch_id INT,
+CONSTRAINT FK_branchId FOREIGN KEY(branch_id) REFERENCES branch(branch_id) 
+ON DELETE CASCADE
+-- ON DELETE SET NULL
+);
+
+DELETE FROM branch WHERE branch_id = 2;
+
+
+-- joins
+-- JOINs are used to combine rows from two or more tables using a common column (usually a primary key ↔ foreign key).
+
+-- inner join - filters and show only satisfied condition data
+SELECT employee.emp_id, employee.ename, employee.job_desc, branch.br_name
+FROM employee
+JOIN branch -- JOIN or INNER JOIN
+ON employee.branch_id = branch.branch_id
+ORDER BY employee.emp_id;
+
+-- left join - filters and show satisfied condition data and includes extra rows left table data also
+SELECT employee.emp_id, employee.ename, employee.job_desc, branch.br_name
+FROM employee -- left table (since we gave as first)
+LEFT JOIN branch -- right table
+ON employee.branch_id = branch.branch_id
+ORDER BY employee.emp_id;
+
+-- right join - filters and show satisfied condition data and includes extra rows right table data also
+SELECT employee.emp_id, employee.ename, employee.job_desc, branch.br_name
+FROM employee -- left table (since we gave as first)
+RIGHT JOIN branch -- right table
+ON employee.branch_id = branch.branch_id
+ORDER BY employee.emp_id;
+
+-- alias name
+SELECT e.emp_id, e.ename, e.job_desc, b.br_name
+FROM employee AS e
+JOIN branch AS b
+ON e.branch_id = b.branch_id
+ORDER BY e.emp_id;
+
+
