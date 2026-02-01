@@ -1,6 +1,6 @@
 package Java.Java_Fundamentals;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class ArrayListBasics {
     public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class ArrayListBasics {
         // size of arrlist
         System.out.println(arrlist.size());
 
-        // normal for loop iteration
+        // for loop iteration
         for (int i = 0; i < arrlist.size(); i++) {
             System.out.println(arrlist.get(i));
         }

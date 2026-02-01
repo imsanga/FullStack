@@ -31,7 +31,7 @@ public class Operators {
         System.out.println(++unaryOp1); // 7
         System.out.println(unaryOp1); // 7
 
-        // relational -> ==, !=, >, <, >=, <= -> returns boolean
+        // relational -> ==, !=, >, <, >=, <= --> returns boolean
         int relation1 = 10;
         int relation2 = 5;
         System.out.println(relation1 == relation2); // false
@@ -41,7 +41,7 @@ public class Operators {
         System.out.println(relation1 >= relation2); // true
         System.out.println(relation1 == relation2); // false
 
-        // logical -> &&, ||
+        // logical -> &&, || --> returns boolean
         int logical1 = 10;
         int logical2 = 5;
         System.out.println(logical1 == 10 && logical2 == 7); // false
@@ -49,7 +49,7 @@ public class Operators {
         System.out.println(logical1 == 10 || logical2 == 7); // true
         System.out.println(logical1 == 5 || logical2 == 7); // false
 
-        // assignment -> +=, -=, *=, /=, %=
+        // assignment -> =, +=, -=, *=, /=, %=
         System.out.println(logical1 += logical2); // logical1 = logical1 + logical2 => 15
 
         // ternary -> condition ? trueStatement : falseStatement
