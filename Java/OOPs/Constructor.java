@@ -1,6 +1,7 @@
 package Java.OOPs;
 
 // A constructor initializes an object and can enforce rules at the time of object creation.
+// The constructor runs during object creation, at runtime.
 
 class Welcome {
     String name;

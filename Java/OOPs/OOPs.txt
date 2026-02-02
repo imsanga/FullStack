@@ -12,3 +12,5 @@ super keyword:
 Encapsulation vs Abstraction
 Encapsulation wraps data (variables) with methods and hides the data using access modifiers.
 Abstraction wraps the class logic and exposes only the required functionality using interfaces or abstract classes.
+
+Inheritance - a subclass is derived from a base class, where subclass can access all the data members and methods of base class except those declared as private
