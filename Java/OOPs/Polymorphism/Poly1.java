@@ -1,4 +1,4 @@
-package Java.OOPs;
+package Java.OOPs.Polymorphism;
 
 // Polymorphism means many forms
 
@@ -6,7 +6,7 @@ package Java.OOPs;
 // Method Overloading (compile time polymophism) - same method name, different parameters
 
 // Method Overriding (run time polymophism)- defining the same method in subclass which is already present in parent class
-// During runtime, the JVM looks at the actual object type. If the method is overridden in the child class, the child’s method is executed; otherwise, the parent’s method is executed.
+// During runtime, the JVM looks at the actual object(child). If the method is overridden in the child class, the child’s method is executed; otherwise, the parent’s method is executed.
 
 class AccountHolderDetails {
     boolean seniorCitizen;
@@ -47,7 +47,7 @@ class FixedDepositSBI extends AccountHolderDetails {
     }
 }
 
-public class Polymorphism {
+public class Poly1 {
     public static void main(String[] args) {
 
         AccountHolderDetails acc1 = new AccountHolderDetails();
