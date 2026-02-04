@@ -1,5 +1,7 @@
 package Java.OOPs.Inheritance;
 
+// Multilevel Inheritance - class inherits from derived class
+
 class Father {
     void father() {
         System.out.println("Father Networth: 10k");

@@ -1,5 +1,7 @@
 package Java.OOPs.Inheritance;
 
+// Hierarchical Inheritance - multiple classes inherits from same base class
+
 class Father {
     void father() {
         System.out.println("Father Networth: 10k");

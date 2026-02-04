@@ -1,5 +1,7 @@
 package Java.OOPs.Inheritance;
 
+// single inheritance - class is inherited from a base class
+
 class Father {
     void father() {
         System.out.println("Father Networth: 10k");
