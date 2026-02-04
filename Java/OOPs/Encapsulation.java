@@ -1,8 +1,5 @@
 package Java.OOPs;
 
-//Encapsulation is the process of binding data members and methods of a program together to do a specific job, without revealing unnecessary details.
-//Encapsulation is achieved by making variables private and accessing them through public getters and setters.
-
 class AccountHolderDetails {
 
     private String name;

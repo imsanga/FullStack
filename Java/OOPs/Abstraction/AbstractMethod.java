@@ -1,12 +1,5 @@
 package Java.OOPs.Abstraction;
 
-// Abstraction is the method of hiding unnecessary details from the necessary ones
-
-// In abstract class,
-// 1. we can define abstract methods (no body)
-// 2. variable are declared by us like public, private but default there is not present like interface->public static final
-// 3. objects cannot be created in abstract class
-
 abstract class RBI {
     RBI() {
         System.out.println("Implement all the regulation for the year 2026");

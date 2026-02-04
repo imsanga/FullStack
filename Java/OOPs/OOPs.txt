@@ -1,16 +1,37 @@
+Access specifiers:
 public -> accessible from anywhere
 private -> Accessible only within the same class
 protected -> Protected members are accessible within the same package and in subclasses outside the package using inheritance.
 default -> Accessible only within the same package
 package -> it groups related classes and interfaces together.
-
+-------------------------------------------------------------------------------------------------------------
 super keyword:
+-> Used only in inheritance
 -> It can access parent class data members (variables) except private.
 -> It can access parent class methods except private.
 -> It can access parent class constructors using super().
+-> super() must be called inside a constructor & first line in constructor
+-------------------------------------------------------------------------------------------------------------
+ENCAPSULATION - hides data(Data hiding)
+-> Encapsulation is the process of binding data members (variables) and methods together into a single unit (class).
+-> It is achieved by making variables private and accessing them through public getters and setters.
+-> Encapsulation focuses on protecting data from unauthorized access.
+-------------------------------------------------------------------------------------------------------------
+ABSTRACTION - shows only necessary functionality(Feature hiding)
+-> Abstraction is the method of hiding unnecessary details and showing only essential features to the user.
+-------------------------------------------------------------------------------------------------------------
+ENCAPSULATION vs ABSTRACTION
 
-Encapsulation vs Abstraction
-Encapsulation wraps data (variables) with methods and hides the data using access modifiers.
-Abstraction wraps the class logic and exposes only the required functionality using interfaces or abstract classes.
+Abstraction → WHAT to do
+- Wraps the class logic
+- Exposes only required functionality
+- Implemented using interfaces and abstract classes
 
+Encapsulation → HOW it is protected
+- Wraps data (variables) with methods
+- Hides data using access modifiers
+
+Example:
+In an ATM, abstraction shows only banking services like withdraw and deposit, while encapsulation hides and protects sensitive data such as account balance.
+-------------------------------------------------------------------------------------------------------------
 Inheritance - a subclass is derived from a base class, where subclass can access all the data members and methods of base class except those declared as private
