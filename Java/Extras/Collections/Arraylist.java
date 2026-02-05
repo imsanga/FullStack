@@ -1,11 +1,16 @@
-package Java.Java_Fundamentals;
+package Java.Extras.Collections;
 
-import java.util.ArrayList;
+// List is an interface
+// ArrayList is a class that implements List
+// It stores elements in indexed order
 
-public class ArrayListBasics {
+import java.util.*;
+
+public class Arraylist {
     public static void main(String[] args) {
         // dynamic array
         ArrayList<Integer> arrlist = new ArrayList<>();
+        // List<Integer> arrlist = new ArrayList<>();
 
         // create
         arrlist.add(10);
