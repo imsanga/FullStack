@@ -6,7 +6,7 @@ public class InputOutput {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // nextInt() reads the integer and stops at whitespace (space, \n, or \t) and
+        // nextInt() reads the integer and stops at whitespace (space, \n, or \t)
         // skips whitespace
         int x = sc.nextInt();
         System.out.println("Input -> " + x);
@@ -36,3 +36,16 @@ public class InputOutput {
         sc.close();
     }
 }
+
+// Notes
+
+// next(), nextInt(), nextDouble(), nextFloat()
+// -> skip leading whitespace
+// -> reads given data
+// -> stop when they encounter whitespace (space, tab, newline)
+// -> the next call skips the whitespace
+// -> leaves (\n) in buffer when enter is clicked
+
+// nextLine()
+// -> reads the entire line (including spaces and tabs)
+// -> stops only when it encounters newline (\n) and consumes (\n)

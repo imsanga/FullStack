@@ -2,7 +2,7 @@ package Java.Java_Fundamentals;
 
 public class Operators {
     public static void main(String[] args) {
-        // Arthimetic -> -,+,/,*,%
+        // Arithmetic -> -,+,/,*,%
         int data1 = 5;
         int data2 = 12;
         System.out.println(data1 + data2);

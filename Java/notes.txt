@@ -1,0 +1,13 @@
+java compile time
+--> converts source code to byte code
+java run time
+--> byte code is converted to machine code by jvm and runs the machine code and gives the output
+JDK
+--> java development kit
+--> jdk is a package where we can develop java applications; inside that jre, jvm is present
+JRE
+--> java runtime environment
+--> contains jvm + libraries to run java programs
+JVM
+--> java virtual machine
+--> it converts bytecode into machine code

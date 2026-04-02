@@ -7,12 +7,11 @@ shrtCut:
 => Software - a set of instructions given to the computer to perform a specific tasks.
 => Plugins - it gives additional features on top of the software without affecting its core functionality.
 => compiler - converts the source code into machine code and generates a exe file.
-=> compile time 
+=> compile time -- code conversion
     -> the time in which the source code is converted to machine code. 
     -> Code is checked for syntax errors.
-=> run time
+=> run time -- code execution
     -> the time in which the program is running, it occurs after the compile time. 
     -> Program is executed and gives output.
     -> logical errors happens here.
 => Arguments pass data; parameters receive data.
-
