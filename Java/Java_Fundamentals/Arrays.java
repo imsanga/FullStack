@@ -7,6 +7,9 @@ public class Arrays {
         // int[] arr2 = new int[] { 1, 2, 3 };
         // int[] arr3 = { 1, 2, 3, 4, 5 };
 
+        // empty array
+        // int[] arr4 = new int[0];
+
         // 1d array
         int[] arr = { 1, 2, 3, 4, 5 };
         System.out.println(arr[0]);

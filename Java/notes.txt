@@ -11,3 +11,17 @@ JRE
 JVM
 --> java virtual machine
 --> it converts bytecode into machine code
+println(System.out.println)
+--> print and go to new line
+Functions
+--> It is a block of code designed to perform specific tasks and it is executed when it is called
+Arrays
+--> single variable can hold more than one value of same data type
+String
+--> Group of characters enclosed within double quotes
+String Immutability
+--> String literals -- it is immutable - once object is created it's value cannot be changed, if want to change it creates a new object, existing object remains there in memory
+--> StringBuilder -- it is mutable - if want to change it modifies the existing object
+Memory Model
+--> Stack memory stores primitive data type values and references of objects
+--> Heap memory stores the actual objects and their data

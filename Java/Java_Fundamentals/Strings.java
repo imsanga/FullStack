@@ -6,6 +6,9 @@ public class Strings {
         System.out.println("name -> " + name);
         System.out.println("stringLength -> " + name.length());
 
+        // empty string
+        // String emptyString = "";
+
         // it includes from begin to end
         System.out.println("substring 1 -> " + name.substring(1));
 
@@ -27,14 +30,48 @@ public class Strings {
         // already exists in the pool
         String s1 = "sanga";
         String s2 = "sanga";
-        System.out.println(s1 == s2);
-        System.out.println(s1.equals(s2));
+        System.out.println(s1 == s2); // true
+        System.out.println(s1.equals(s2)); // true
 
         // s3 stores a reference in the stack, and the object is created in the heap
         String s3 = new String("sanga");
         String s4 = new String("sanga");
-        System.out.println(s3 == s4);
-        System.out.println(s3.equals(s4));
+        System.out.println(s3 == s4); // false
+        System.out.println(s3.equals(s4)); // true
 
+        // isEmpty
+        System.out.println(s1.isEmpty()); // false
+
+        // *** StringBuilder ***
+        StringBuilder sb = new StringBuilder("Hello");
+
+        // length
+        System.out.println(sb.length());
+
+        // append - add at end of string
+        sb.append(" Sanga!");
+        System.out.println(sb);
+
+        // insert
+        sb.insert(5, " World");
+        System.out.println(sb);
+
+        // replace
+        sb.replace(5, 11, " da");
+        System.out.println(sb);
+
+        // charAt
+        System.out.println(sb.charAt(0));
+
+        // delete
+        sb.delete(0, 2); // don't include end Index
+        System.out.println(sb);
+
+        // reverse
+        sb.reverse();
+        System.out.println(sb);
+
+        // isEmpty
+        System.out.println(sb.isEmpty());
     }
 }
