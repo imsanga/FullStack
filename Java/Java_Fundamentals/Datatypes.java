@@ -38,6 +38,7 @@ public class Datatypes {
         char g = 'r';
         System.out.println("char -> " + g);
 
+        // 1 bit
         boolean h = true;
         System.out.println("boolean -> " + h);
     }

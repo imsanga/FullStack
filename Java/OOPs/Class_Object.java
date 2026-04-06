@@ -1,6 +1,8 @@
 package Java.OOPs;
 
-// class - blueprint for an onject
+// class - blueprint for an object
+// class consists of data members (variables) and member functions (methods)
+
 // object - n no of object can be created from a class
 
 class Welcome {
