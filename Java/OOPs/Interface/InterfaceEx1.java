@@ -29,7 +29,7 @@ class DummyBaba implements Dummy {
 
 }
 
-public class InterfaceEx {
+public class InterfaceEx1 {
     public static void main(String[] args) {
         Dummy d1 = new DummyBaba();
         d1.dummify1();
