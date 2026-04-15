@@ -39,7 +39,7 @@ public class Strings {
         System.out.println(s3 == s4); // false
         System.out.println(s3.equals(s4)); // true
 
-        // isEmpty
+        // isEmpty - returns true or false
         System.out.println(s1.isEmpty()); // false
 
         // *** StringBuilder ***
@@ -57,11 +57,8 @@ public class Strings {
         System.out.println(sb);
 
         // replace
-        sb.replace(5, 11, " da");
+        sb.replace(5, 11, " da"); // don't include end Index
         System.out.println(sb);
-
-        // charAt
-        System.out.println(sb.charAt(0));
 
         // delete
         sb.delete(0, 2); // don't include end Index
@@ -71,7 +68,8 @@ public class Strings {
         sb.reverse();
         System.out.println(sb);
 
-        // isEmpty
-        System.out.println(sb.isEmpty());
+        // .toString() converts any object to string object
+        String convertSB = sb.toString();
+        System.out.println(convertSB);
     }
 }

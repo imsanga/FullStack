@@ -19,7 +19,7 @@ public class Arrays {
         for (int i : arr)
             System.out.println(i);
 
-        // 2d array
+        // 2d array (array of arrays)
         int[][] arr2d = { { 1 }, { 1, 2 }, { 1, 2, 3 } };
 
         for (int i = 0; i < arr2d.length; i++) {
