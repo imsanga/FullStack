@@ -4,12 +4,9 @@ private -> Accessible only within the same class
 protected -> Protected members are accessible within the same package and in subclasses outside the package using inheritance.
 default -> Accessible only within the same package
 package -> it groups related classes and interfaces together.
-----------
-super keyword:
--> Used only in inheritance
--> It can access parent class variables,methods except private.
--> It can access parent class constructors using super().
--> super() must be called inside a constructor & first line in constructor.
+
+Outer classes can have the following modifiers -> public, default, abstract, final
+Inner classes can have all modifiers
 ----------
 ENCAPSULATION - hides data(Data hiding)
 -> Encapsulation is the process of binding data members (variables) and methods together into a single unit (class).
@@ -20,6 +17,18 @@ Polymorphism - means many forms
 Two types of polymorphism
 --> Method Overloading (compile time polymophism) - same method name, different parameters
 --> Method Overriding (run time polymophism) - defining the same method in subclass which is already present in parent class. During runtime, the JVM looks at the actual object(child). If the method is overridden in the child class, the child’s method is executed; otherwise, the parent’s method is executed.
+----------
+coupling - how a class is dependent on another class
+tight coupling - class is directly dependent on another class
+loose coupling - class depends on abstraction, not concrete class
+----------
+Inheritance - class inherits data members and methods of another class, except those declared as private.
+----------
+super keyword:
+-> Used only in inheritance
+-> It can access parent class variables,methods except private.
+-> It can access parent class constructors using super().
+-> super() must be called inside a constructor & first line in constructor.
 ----------
 ABSTRACTION - shows only necessary functionality(Feature hiding)
 -> Abstraction is the method of hiding unnecessary details and showing only essential features to the user.
@@ -38,4 +47,3 @@ Encapsulation → HOW it is protected
 Example:
 In an ATM, abstraction shows only banking services like withdraw and deposit, while encapsulation hides and protects sensitive data such as account balance.
 ----------
-Inheritance - class inherits data members and methods of another class, except those declared as private.

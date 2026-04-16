@@ -19,10 +19,8 @@ import Java.OOPs.AccessSpecifiers.protectedSpecifier.pack2.File2;
 // classes in other package - via inheritance with child reference
 public class MainFile extends File2 {
     public static void main(String[] args) {
-
         MainFile mf = new MainFile();
         System.out.println(mf.name);
         mf.greet();
-
     }
 }

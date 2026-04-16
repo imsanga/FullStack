@@ -3,7 +3,8 @@ package Java.OOPs;
 // class - blueprint for an object
 // class consists of data members (variables) and member functions (methods)
 
-// object - n no of object can be created from a class
+// object - an object is created from a class
+// n no of objects can be created from a class
 
 class Welcome {
     void welcome(String name) {
