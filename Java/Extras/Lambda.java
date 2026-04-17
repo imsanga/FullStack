@@ -1,5 +1,17 @@
 package Java.Extras;
 
+// lambda - A lambda expression is a concise way to represent an anonymous implementation of a functional interface.
+
+// Without Lambda:
+// Create anonymous class
+// Override method
+// Write full structure
+
+// With Lambda:
+// Java already knows method name (sum)
+// You just give logic
+// No class, no method writing
+
 interface Add {
     int sum(int a, int b);
 }
