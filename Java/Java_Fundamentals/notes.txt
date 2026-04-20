@@ -1,11 +1,6 @@
-Datatypes
---> Primitive - Stores actual value (byte,short,int,long,float,double,char,boolean)
---> Reference - Stores address of object (arrays,strings,class,wrappperClass,interfaces)
-----------
-java compile time
---> converts source code to byte code
-java run time
---> byte code is converted to machine code by jvm and runs the machine code and gives the output
+Compile time vs Run time
+=> java compile time - converts source code to byte code
+=> java run time - byte code is converted to machine code by jvm and runs the machine code and gives the output
 ----------
 JDK
 --> java development kit
@@ -17,9 +12,13 @@ JVM
 --> java virtual machine
 --> it converts bytecode into machine code
 ----------
+Datatypes
+--> Primitive - Stores actual value (byte,short,int,long,float,double,char,boolean)
+--> Reference - Stores address of object (arrays,strings,class,wrapperClass,interfaces)
+----------
 => println(System.out.println) - print and go to new line
-=> Looping - It is used to execute a block of code repeatedly until a specified condition is satisfied.
-=> Conditional statement - It is used to execute different blocks of code based on whether a condition is true or false.
+=> Looping - It is used to execute a block of code repeatedly until the given condition gets satisfied.
+=> Conditional statement - It is used to execute different blocks of code depending upon the given condition is true or false.
 => Type casting - It is the process of converting one data type into another data type
 ----------
 => Arrays - single variable can hold more than one value of same data type
