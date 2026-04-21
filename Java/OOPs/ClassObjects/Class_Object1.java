@@ -1,4 +1,4 @@
-package Java.OOPs;
+package Java.OOPs.ClassObjects;
 
 // class - blueprint for an object
 // class consists of data members (variables) and member functions (methods)
@@ -12,7 +12,7 @@ class Welcome {
     }
 }
 
-public class Class_Object {
+public class Class_Object1 {
     public static void main(String[] args) {
         Welcome no1 = new Welcome();
         no1.welcome("virat");
