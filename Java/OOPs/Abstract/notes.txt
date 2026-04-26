@@ -1,0 +1,40 @@
+ABSTRACT CLASS RULES IN JAVA
+
+-> an abstract class cannot create objects
+-> abstract methods do not have a body; they are only declared
+-> abstract methods must be overridden and implemented in the subclass, where they are defined
+
+note: variable are declared by us like public, private but default there is not present like interface->public static final
+
+1. Abstract class is a partially implemented class
+   - It can have both abstract and non-abstract methods
+   - Object of abstract class cannot be created
+
+2. Variables in an abstract class:
+   - Can have instance variables
+   - Variables can be static or non-static
+   - Variables need NOT be initialized at declaration
+
+3. Methods in an abstract class:
+   - Can have abstract methods (without body)
+   - Can have concrete methods (with body)
+   - Abstract methods MUST be implemented by subclass
+   - Non-abstract methods may or may not be overridden
+
+4. Abstract methods:
+   - Declared using abstract keyword
+   - Cannot have method body
+   - Must be implemented by first concrete subclass
+
+5. Constructors:
+   - Abstract class CAN have constructors
+   - Constructors are called when subclass object is created
+
+6. Inheritance rules:
+   - A class can extend only ONE abstract class
+   - Abstract class can extend another abstract class
+
+7. Other rules:
+   - Abstract class can contain static methods
+   - Abstract class can contain final methods
+   - An abstract class cannot be declared final

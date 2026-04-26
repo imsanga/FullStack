@@ -1,0 +1,3 @@
+=> CSS stands for cascading style sheets
+=> It is used for styling of webpages
+=> It was founded by Hakon Wium Lie

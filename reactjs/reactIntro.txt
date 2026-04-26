@@ -1,0 +1,2 @@
+* React is a front-end and open-source JavaScript library 
+* It is useful in developing user interfaces specifically for applications with a single page.

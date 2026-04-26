@@ -1,0 +1,35 @@
+INTERFACE RULES IN JAVA
+
+1. Interface is a blueprint (contract), not an object
+   - We cannot create object of an interface
+
+2. Variables in an interface are ALWAYS:
+   - public static final (by default)
+   - Must be initialized at declaration
+   - Cannot be reassigned
+   - No instance variables allowed
+
+3. Methods in an interface:
+   - Without body → public abstract (default)
+   - MUST be implemented by implementing class
+   - Implemented methods must be public
+
+4. Default methods (Java 8+):
+   - Can have method body
+   - Inherited by implementing class
+   - Overriding is optional
+   - Called using object reference
+
+5. Static methods (Java 8+):
+   - Can have method body
+   - Belong to interface, not object
+   - Cannot be overridden (only hidden)
+   - Called using interface name
+
+6. Constructors:
+   - Interfaces cannot have constructors
+
+7. Inheritance rules:
+   - A class can implement multiple interfaces
+   - An interface can extend multiple interfaces
+

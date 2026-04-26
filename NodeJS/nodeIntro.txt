@@ -1,0 +1,3 @@
+=> Node.js is a runtime environment that allows JavaScript to run on the server side.
+
+=> path module - it is used to manage the file path effectively
