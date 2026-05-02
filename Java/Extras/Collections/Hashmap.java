@@ -19,16 +19,18 @@ public class Hashmap {
         l1.put(1, "Sanga");
         l1.put(2, "Santha");
         l1.put(3, "dummy");
-        l1.put(3, "Nattu");
 
         // read
         System.out.println(l1.get(3));
 
-        // check key
-        System.out.println(l1.containsKey(3));
+        // update
+        l1.put(3, "Nattu");
 
         // remove Key
         l1.remove(3);
+
+        // check key
+        System.out.println(l1.containsKey(3));
 
         // size of map
         System.out.println(l1.size());

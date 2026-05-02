@@ -1,4 +1,4 @@
-package Java.Extras;
+package Java.Extras.Generics;
 
 // Generics provide type safety by checking data types at compile time.
 
