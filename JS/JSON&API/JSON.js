@@ -17,9 +17,9 @@ let json = `[
     }
   ]`;
 
-//JSON.parse -> It converts string to JS object
+//JSON.parse -> It converts JSON string to JS object
 let resultJ = JSON.parse(json);
 console.log(resultJ[0].Name);
 
-//JSON.stringify - (To Transmit) object as a string
+//JSON.stringify - It converts JS object to JSON string
 console.log(JSON.stringify(resultJ));
