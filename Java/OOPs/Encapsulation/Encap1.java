@@ -1,5 +1,3 @@
-package Java.OOPs;
-
 class AccountHolderDetails {
 
     private String name;
@@ -24,7 +22,7 @@ class AccountHolderDetails {
     }
 }
 
-public class Encapsulation {
+public class Encap1 {
     public static void main(String[] args) {
 
         AccountHolderDetails accHolder1 = new AccountHolderDetails();
