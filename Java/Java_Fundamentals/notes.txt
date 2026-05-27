@@ -20,6 +20,8 @@ Datatypes
 => Looping - It is used to execute a block of code repeatedly until the given condition gets satisfied.
 => Conditional statement - It is used to execute different blocks of code depending upon the given condition is true or false.
 => Type casting - It is the process of converting one data type into another data type
+--> implicit - converting from small datatype to large datatype (eg: int to long)
+--> explicit - converting from large datatype to small datatype (eg: long to int)
 ----------
 => Arrays - single variable can hold more than one value of same data type
 => String - Group of characters enclosed within double quotes
