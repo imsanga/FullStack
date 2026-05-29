@@ -22,7 +22,7 @@ class Qualifiers implements IPL {
     }
 }
 
-public class InterfaceOG {
+public class InterfaceEx3 {
     public static void main(String[] args) {
         IPL q1 = new Qualifiers();
         q1.rcb();

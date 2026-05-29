@@ -23,7 +23,7 @@ class DummyBaba extends Dummy {
 
 }
 
-public class Abstract {
+public class AbstractEx1 {
     public static void main(String[] args) {
         Dummy d1 = new DummyBaba();
         d1.dummify();

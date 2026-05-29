@@ -38,3 +38,5 @@ note: variable are declared by us like public, private but default there is not 
    - Abstract class can contain static methods
    - Abstract class can contain final methods
    - An abstract class cannot be declared final
+
+8. A concrete (non-abstract) class extending an abstract class must implement all abstract methods.

@@ -33,3 +33,5 @@ INTERFACE RULES IN JAVA
    - A class can implement multiple interfaces
    - An interface can extend multiple interfaces
 
+8. A concrete (non-abstract) class that implements an interface must provide implementations for all abstract methods of that interface (and any parent interfaces), unless those methods already have default implementations.
+
