@@ -1,55 +1,45 @@
 package Java.OOPs.Coupling;
 
-class Variant {
-    void Petrol() {
-        System.out.println("Petrol");
+// Tight Coupling
+class PaymentMethod {
+    void upi() {
+        System.out.println("Paid through upi");
     }
 
-    void Diesel() {
-        System.out.println("Diesel");
+    void bankTransfer() {
+        System.out.println("Paid through bankTransfer");
     }
 
-    void Electric() {
-        System.out.println("Electric");
-    }
-}
-
-class Model {
-    void Punch() {
-        System.out.println("Punch");
-    }
-
-    void Nexon() {
-        System.out.println("Nexon");
-    }
-
-    void Harrier() {
-        System.out.println("Harrier");
-    }
-
-    void Safari() {
-        System.out.println("Safari");
-    }
-
-    void Sierra() {
-        System.out.println("Sierra");
+    void creditCard() {
+        System.out.println("Paid through creditCard");
     }
 }
 
-class Car {
-    Variant customerVariant = new Variant();
-    Model customerModel = new Model();
+class Payment {
+    PaymentMethod md = new PaymentMethod();
 
-    void greet() {
-        System.out.println("Welcome to the world of TATA cars!");
-        customerModel.Punch();
-        customerVariant.Petrol();
+    void paymentMethod(String payment) {
+        switch (payment) {
+            case "upi":
+                md.upi();
+                break;
+            case "bankTransfer":
+                md.bankTransfer();
+                break;
+            case "creditCard":
+                md.creditCard();
+                break;
+            default:
+                System.out.println("Choose any of this: upi, bankTransfer, creditCard");
+        }
     }
 }
 
 public class TightCoupling {
     public static void main(String[] args) {
-        Car customer = new Car();
-        customer.greet();
+
+        Payment user1 = new Payment();
+        user1.paymentMethod("upi");
+        user1.paymentMethod("dummy");
     }
 }

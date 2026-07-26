@@ -27,8 +27,7 @@ public class InterfaceOG {
         IPL q1 = new Qualifiers();
         q1.rcb();
 
-        // static methods inside interface can be accessed calling interface directly,
-        // how we use in class
+        // static methods inside interface can be accessed by calling interface directly
         IPL.csk();
 
         // static methods inside interface cannot be accesed via inheritance

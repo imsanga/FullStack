@@ -25,6 +25,6 @@ public class Static {
         System.out.println(Dummy.count);
         System.out.println("*****");
         Dummy d1 = new Dummy();
-        d1.welcome(); // not create objects for accessing static variables/methods
+        d1.welcome(); // don't create objects for accessing static variables/methods
     }
 }

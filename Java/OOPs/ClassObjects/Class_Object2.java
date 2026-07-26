@@ -20,5 +20,7 @@ public class Class_Object2 {
 
         String voted = sc.nextLine();
         id1.votedFor(voted);
+
+        sc.close();
     }
 }
