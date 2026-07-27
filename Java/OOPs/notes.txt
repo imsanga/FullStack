@@ -16,7 +16,7 @@ ENCAPSULATION - hides data(Data hiding)
 Polymorphism - means many forms
 Two types of polymorphism
 --> Method Overloading (compile time polymorphism) - same method name, different parameters
---> Method Overriding (run time polymorphism) - defining the same method in subclass which is already present in parent class. During runtime, the JVM looks at the actual object(child). If the method is overridden in the child class, the child’s method is executed; otherwise, the parent’s method is executed.
+--> Method Overriding (run time polymorphism) - defining the same method in subclass which is already present in parent class. During runtime, the JVM looks at the actual object(child) and calls the overridden method.
 ----------
 coupling - how a class is dependent on another class
 tight coupling - class is directly dependent on another class

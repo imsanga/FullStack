@@ -14,14 +14,14 @@ promise
 
 // Promise with arrow functions
 const tatkalBooking = new Promise((resolve, reject) => {
-  let tatkalalBookingStatus = false;
-  if (tatkalalBookingStatus)
+  let tatkalBookingStatus = false;
+  if (tatkalBookingStatus)
     resolve(
-      `Your Booking is confirmed in VANDE BHARAT EXPRESS , have a Safe Journey!!!, Thankyou IRCTC`
+      `Your Booking is confirmed in VANDE BHARAT EXPRESS , have a Safe Journey!!!, Thankyou IRCTC`,
     );
   else
     reject(
-      `Your Booking is Rejected due to immense no of bookings for the VANDE BHARAT EXPRESS, Thankyou IRCTC`
+      `Your Booking is Rejected due to immense no of bookings for the VANDE BHARAT EXPRESS, Thankyou IRCTC`,
     );
 });
 
@@ -32,14 +32,14 @@ tatkalBooking
 // returning promise from function
 function tatkalBooking1() {
   return new Promise((resolve, reject) => {
-    let tatkalalBookingStatus = 1;
-    if (tatkalalBookingStatus == true)
+    let tatkalBookingStatus = 1;
+    if (tatkalBookingStatus == true)
       resolve(
-        `Your Booking is confirmed in VANDE BHARAT EXPRESS , have a Safe Journey!!!, Thankyou IRCTC`
+        `Your Booking is confirmed in VANDE BHARAT EXPRESS , have a Safe Journey!!!, Thankyou IRCTC`,
       );
     else
       reject(
-        `Your Booking is Rejected due to immense no of bookings for the VANDE BHARAT EXPRESS, Thankyou IRCTC`
+        `Your Booking is Rejected due to immense no of bookings for the VANDE BHARAT EXPRESS, Thankyou IRCTC`,
       );
   });
 }
@@ -52,14 +52,14 @@ tatkalBooking1()
 //Promise with multiple "then()" methods
 function tatkalBooking2() {
   return new Promise((resolve, reject) => {
-    let tatkalalBookingStatus = 1;
-    if (tatkalalBookingStatus == true)
+    let tatkalBookingStatus = 1;
+    if (tatkalBookingStatus == true)
       resolve(
-        `Your Booking is confirmed in VANDE BHARAT EXPRESS , have a Safe Journey!!!, Thankyou IRCTC`
+        `Your Booking is confirmed in VANDE BHARAT EXPRESS , have a Safe Journey!!!, Thankyou IRCTC`,
       );
     else
       reject(
-        `Your Booking is Rejected due to immense no of bookings for the VANDE BHARAT EXPRESS, Thankyou IRCTC`
+        `Your Booking is Rejected due to immense no of bookings for the VANDE BHARAT EXPRESS, Thankyou IRCTC`,
       );
   });
 }

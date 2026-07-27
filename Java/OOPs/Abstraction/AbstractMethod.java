@@ -1,38 +1,31 @@
 package Java.OOPs.Abstraction;
 
 abstract class RBI {
-    RBI() {
-        System.out.println("Implement all the regulation for the year 2026");
-    }
+    static int rbiRegulation = 2026;
 
-    abstract void rbi2026Regulation();
-
-    void wishes() {
-        System.out.println("Happy New year 2026");
-    }
-
+    abstract void rbiRegulation();
 }
 
 class SBI extends RBI {
-    void rbi2026Regulation() {
-        System.out.println("SBI implemented all the regulation for the year 2026");
+    public void rbiRegulation() {
+        System.out.println("SBI implemented all the regulation for the year " + RBI.rbiRegulation);
+        System.out.println("Happy New Year " + RBI.rbiRegulation);
     }
 }
 
 class HDFC extends RBI {
-    void rbi2026Regulation() {
-        System.out.println("HDFC implemented all the regulation for the year 2026");
+    public void rbiRegulation() {
+        System.out.println("HDFC implemented all the regulation for the year " + RBI.rbiRegulation);
+        System.out.println("Happy New Year " + RBI.rbiRegulation);
     }
 }
 
 public class AbstractMethod {
     public static void main(String[] args) {
         RBI sbiChennai = new SBI();
-        sbiChennai.rbi2026Regulation();
-        sbiChennai.wishes();
+        sbiChennai.rbiRegulation();
 
         RBI hdfcChennai = new HDFC();
-        hdfcChennai.rbi2026Regulation();
-        hdfcChennai.wishes();
+        hdfcChennai.rbiRegulation();
     }
 }

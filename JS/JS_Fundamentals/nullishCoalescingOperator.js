@@ -1,4 +1,4 @@
-// ?? => It accepts two values, and returns a value which is not a null or undefined
+// ?? => It is a logical operator that accepts two values and returns the second value if the first one is null or undefined
 
 //Using OR
 // let x = "sanga";

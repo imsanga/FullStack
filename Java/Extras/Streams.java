@@ -8,8 +8,8 @@ public class Streams {
         List<Integer> list = Arrays.asList(1, 2, 2, 3, 4, 5);
 
         List<Integer> lt = list.stream()
-                .map(n -> n * 2)
                 .filter(n -> n % 2 == 0)
+                .map(n -> n * 2)
                 .sorted()
                 .distinct()
                 .collect(Collectors.toList());
